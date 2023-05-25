@@ -41,7 +41,7 @@ export const HeaderMobile = () => {
           isActive ? "" : "hidden"
         }  fixed flex text-white uppercase font-mono w-full z-40 h-full left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex-col justify-center text-center text-3xl bg-my-bg bg-opacity-80 backdrop-blur-sm`}
       >
-        <li className="mb-10 desktop:mr-12 after:duration-100 before:duration-200 before:content-['['] before:mr-2 before:inline-block before:opacity-0 before:translate-x-4 before:transition before:hover:opacity-100 before:hover:translate-x-0 after:content-[']'] after:ml-2 after:inline-block after:opacity-0 after:-translate-x-4 after:transition after:hover:opacity-100 after:hover:translate-x-0">
+        <li className="mb-16">
           <Link
             onClick={handleClick}
             to="work"
@@ -52,7 +52,7 @@ export const HeaderMobile = () => {
             Work
           </Link>
         </li>
-        <li className="mb-10 desktop:mr-12 after:duration-200 before:duration-200 before:content-['['] before:mr-2 before:inline-block before:opacity-0 before:translate-x-4 before:transition before:hover:opacity-100 before:hover:translate-x-0 after:content-[']'] after:ml-2 after:inline-block after:opacity-0 after:-translate-x-4 after:transition after:hover:opacity-100 after:hover:translate-x-0">
+        <li className="mb-16">
           <Link
             onClick={handleClick}
             to="about"
@@ -63,12 +63,12 @@ export const HeaderMobile = () => {
             About
           </Link>
         </li>
-        <li className="mb-10 desktop:mr-12 after:duration-200 before:duration-200 before:content-['['] before:mr-2 before:inline-block before:opacity-0 before:translate-x-4 before:transition before:hover:opacity-100 before:hover:translate-x-0 after:content-[']'] after:ml-2 after:inline-block after:opacity-0 after:-translate-x-4 after:transition after:hover:opacity-100 after:hover:translate-x-0">
+        <li className="mb-16 hover:text-my-lila">
           <Link onClick={handleClick} to="contact" smooth={true} duration={700}>
             Contact
           </Link>
         </li>
-        <li className="desktop:mr-12 after:duration-200 before:duration-200 before:content-['['] before:mr-2 before:inline-block before:opacity-0 before:translate-x-4 before:transition before:hover:opacity-100 before:hover:translate-x-0 after:content-[']'] after:ml-2 after:inline-block after:opacity-0 after:-translate-x-4 after:transition after:hover:opacity-100 after:hover:translate-x-0">
+        <li className="hover:text-my-lila">
           <a
             onClick={handleClick}
             href="/HectorOlivaresCV.pdf"
