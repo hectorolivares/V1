@@ -198,7 +198,7 @@ export const Home = () => {
                 Frameworks/Libraries/Others
               </h5>
               <p className="font-thin leading-8">
-                React.js, Vue.js, Tailwind CSS, Bootstrap, Node.js, Webpack,
+                React.js, Vue.js, Tailwind CSS, Bootstrap, Node.js, WordPress, Webpack,
                 Netlify, Vercel, NPM, Git, Command line
               </p>
             </div>
