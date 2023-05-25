@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Time Tracking Dashboard",
+        "description": "Track your time with this web app",
+        "type": "Web App",
+        "link": "https://github.com/hectorolivares/time-tracking-dashboard",
+        "image": "tt-cover.png",
+        "start": 1,
+        "end": 6
+    },
+    {
+        "title": "Bookshelf App",
+        "description": "Centralized hub for tracking, purchasing, and organizing readings.",
+        "type": "Design",
+        "link": "https://dribbble.com/shots/21531688-Bookshelf-App-Design?utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bookshelf%20App%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bookshelf%20App%20Design&utm_medium=Social_Share",
+        "image": "bs-cover.png",
+        "start": 6,
+        "end": 9
+    },
+    {
+        "title": "Bazar Yokai",
+        "description": "eCommerce project promoting reuse, affordable products, and environmental care.",
+        "type": "Design",
+        "link": "https://dribbble.com/shots/21535167-Bazar-Yokai-Project?utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bazar%20Yokai%20Project&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bazar%20Yokai%20Project&utm_medium=Social_Share",
+        "image": "by-cover.png",
+        "start": 2,
+        "end": 8
+    },
+    {
+        "title": "Tip calculator app",
+        "description": "Split that bill with this web app",
+        "type": "Web App",
+        "link": "https://github.com/hectorolivares/tip-calculator-app",
+        "image": "tc-cover.png",
+        "start": 1,
+        "end": 4
+    },
+    {
+        "title": "Personal Website V1",
+        "description": "The very first version of my personal website",
+        "type": "Website",
+        "link": "",
+        "image": "ho-cover.png",
+        "start": 4,
+        "end": 9
+    }
+]
