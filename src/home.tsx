@@ -6,7 +6,6 @@ import { HeaderMobile } from "./components/HeaderMobile";
 import { WorkCard } from "./components/WorkCard";
 
 export const Home = () => {
-
   //* show and copy to clipboard
   const [clipboardMessage, setClipboardMessage] = useState(false);
   const email = "hectorolivares033@gmail.com";
@@ -62,7 +61,8 @@ export const Home = () => {
           className="w-full fade-in-section flex items-start justify-end mb-40 h-[400px] flex-col laptop:items-end laptop:h-[620px] desktop:h-[880px] laptop:flex-row laptop:justify-between"
         >
           <h2 className="text-3xl mobile:text-[36px] tablet:text-[62px] desktop:text-[86px] leading-tight font-medium align-baseline">
-            <span className="opacity-20 -z-10   ">Hi, my name is</span><br />
+            <span className="opacity-20 -z-10   ">Hi, my name is</span>
+            <br />
             Héctor Olivares
             <br />
             <span className="opacity-20">I’m a</span> Web Developer.
@@ -127,10 +127,10 @@ export const Home = () => {
         >
           <div className="bg-gray-500 bg-opacity-5 rounded-xl col-span-3 p-7 font-extralight mb-6 desktop:mb-0 desktop:p-14 ">
             <div className=" font-light desktop:mb-14">
-              <h3 className="text-3xl mb-14 font-normal">About</h3>
+              <h3 className="text-3xl mb-14 font-normal">About me</h3>
               <p className="mb-14 desktop:text-[17px] desktop:mb-0">
                 I am Héctor Olivares, a web developer with experience in
-                TypeScript, React, and Tailwind CSS, and I am also proficient in
+                TypeScript, React, and Tailwind CSS. Also, I am proficient in
                 designing for web pages or applications. Currently, I am
                 studying Computer Engineering at UNAM. I am passionate about
                 programming and always strive to stay up-to-date with the latest
@@ -149,8 +149,8 @@ export const Home = () => {
                     University of Mexico)
                   </p>
                   <p className="opacity-60 mb-2">
-                    BE in Computer Engineering, with specialization in Software
-                    Engineering
+                    B.E. in Computer Engineering, with specialization in
+                    Software Engineering
                   </p>
                   <p className="opacity-60">August 2020 - Present</p>
                 </div>
@@ -226,8 +226,11 @@ export const Home = () => {
           </a>
         </div>
 
-        <section id="contact" className="py-40 laptop:py-24 desktop:py-40">
-          <h2 className="text-4xl leading-relaxed text-center">
+        <section
+          id="contact"
+          className="py-40 w-[80%] m-auto laptop:py-24 desktop:py-40"
+        >
+          <h2 className="text-3xl laptop:text-4xl leading-relaxed text-center">
             Get in touch by{" "}
             <a
               onClick={() => {
