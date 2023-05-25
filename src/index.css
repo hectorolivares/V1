@@ -3,9 +3,22 @@
 @tailwind utilities;
 
 body {
-  background-image: radial-gradient(circle at bottom center, rgb(20,4,49),rgb(13,12,18));
+  background-image: radial-gradient(
+    circle at bottom center,
+    rgb(20, 4, 49),
+    rgb(13, 12, 18)
+  );
+  background-color: #0d0c12;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+html {
+  overscroll-behavior: none;
 }
 
 @keyframes fade-in {
