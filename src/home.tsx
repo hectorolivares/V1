@@ -46,7 +46,7 @@ export const Home = () => {
 
       <div
         className={`${
-          clipboardMessage && "laptop:animate-clipboard"
+          clipboardMessage ? "laptop:animate-clipboard visible" : "invisible"
         } fixed flex items-center bg-my-lila z-50 p-3 rounded-full left-1/2 top-[110%] -translate-x-1/2 -translate-y-1/4`}
         onAnimationEnd={() => setClipboardMessage(false)}
       >
