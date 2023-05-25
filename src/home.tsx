@@ -78,7 +78,7 @@ export const Home = () => {
                 }}
               >
                 {/Mobi|Android/i.test(navigator.userAgent)
-                  ? "Email ↗️"
+                  ? "Email"
                   : "Copy Email"}
               </a>
             </li>
@@ -88,7 +88,7 @@ export const Home = () => {
                 href="https://github.com/hectorolivares"
                 target="_blank"
               >
-                Github ↗
+                Github
               </a>
             </li>
             <li className="">
@@ -97,7 +97,7 @@ export const Home = () => {
                 href="https://www.linkedin.com/in/hectorolivaresn/"
                 target="_blank"
               >
-                LinkedIn ↗
+                LinkedIn
               </a>
             </li>
           </ul>
