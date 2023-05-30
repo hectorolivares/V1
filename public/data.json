@@ -1,10 +1,10 @@
 [
     {
-        "title": "Time Tracking Dashboard",
-        "description": "Track your time with this web app",
-        "type": "Web App",
-        "link": "https://github.com/hectorolivares/time-tracking-dashboard",
-        "image": "tt-cover.png",
+        "title": "Personal Website V1",
+        "description": "The very first version of my personal website",
+        "type": "Website",
+        "link": "https://github.com/hectorolivares/V1",
+        "image": "ho-cover.png",
         "start": 1,
         "end": 6
     },
@@ -36,12 +36,21 @@
         "end": 4
     },
     {
-        "title": "Personal Website V1",
-        "description": "The very first version of my personal website",
-        "type": "Website",
-        "link": "https://github.com/hectorolivares/V1",
-        "image": "ho-cover.png",
+        "title": "Time Tracking Dashboard",
+        "description": "Track your time with this web app",
+        "type": "Web App",
+        "link": "https://github.com/hectorolivares/time-tracking-dashboard",
+        "image": "tt-cover.png",
         "start": 4,
         "end": 9
+    },
+    {
+        "title": "Bookmark Landing Page",
+        "description": "A clean and simple interface to organize your favourite websites.",
+        "type": "Website",
+        "link": "https://github.com/hectorolivares/bookmark-landing-page",
+        "image": "bm-cover.png",
+        "start": 2,
+        "end": 8
     }
 ]
