@@ -31,11 +31,11 @@ export default {
       'tablet': '768px',
       // => @media (min-width: 768px) { ... }
 
-      'laptop': '1024px',
-      // => @media (min-width: 1024px) { ... }
+      'laptop': '1000px',
+      // => @media (min-width: 1000px) { ... }
 
-      'desktop': '1300px',
-      // => @media (min-width: 1300px) { ... }
+      'desktop': '1400px',
+      // => @media (min-width: 1400px) { ... }
     },
   },
   plugins: [],
