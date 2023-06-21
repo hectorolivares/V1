@@ -55,7 +55,7 @@ export const Home = () => {
         <IonIcon name="checkmark-circle" className="text-green-300 ml-2" />
       </div>
 
-      <main className="text-white m-auto w-full px-6 laptop:max-w-[1148px] desktop:max-w-[1548px]">
+      <main className="text-white m-auto w-full px-4 laptop:max-w-[1148px] desktop:max-w-[1548px]">
         <section
           id="home"
           className="w-full fade-in-section flex items-start justify-end mb-40 h-[400px] flex-col laptop:items-end laptop:h-[620px] desktop:h-[880px] laptop:flex-row laptop:justify-between"
@@ -71,7 +71,7 @@ export const Home = () => {
           <ul className="flex align-baseline flex-wrap gap-y-9 mt-10 desktop:mb-7 laptop:mb-5 text-sm">
             <li className="">
               <a
-                className="mr-3 cursor-pointer desktop:mr-12 bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 transition duration-300 ease-out"
+                className="mr-3 cursor-pointer desktop:mr-12 bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
                 onClick={() => {
                   enableLink();
                   setClipboardMessage(true);
@@ -84,7 +84,7 @@ export const Home = () => {
             </li>
             <li className="">
               <a
-                className="mr-3 desktop:mr-12 bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 transition duration-300 ease-out"
+                className="mr-3 desktop:mr-12 bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-300 ease-out"
                 href="https://github.com/hectorolivares"
                 target="_blank"
               >
@@ -93,7 +93,7 @@ export const Home = () => {
             </li>
             <li className="">
               <a
-                className="bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 transition duration-300 ease-out"
+                className="bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
                 href="https://www.linkedin.com/in/hectorolivaresn/"
                 target="_blank"
               >
@@ -113,7 +113,8 @@ export const Home = () => {
               title={item.title}
               desc={item.description}
               type={item.type}
-              link={item.link}
+              site={item.site}
+              code={item.code}
               image={item.image}
               start={item.start}
               end={item.end}
@@ -129,7 +130,7 @@ export const Home = () => {
             <div className=" font-light desktop:mb-14">
               <h3 className="text-3xl mb-14 font-normal">About me</h3>
               <p className="mb-14 desktop:text-[17px] desktop:mb-0">
-                I am Héctor Olivares, a web developer with experience in
+                Hi, I am Héctor Olivares, a web developer with experience in
                 TypeScript, React, and Tailwind CSS. Also, I am proficient in
                 designing for web pages or applications. Currently, I am
                 studying Computer Engineering at UNAM. I am passionate about
@@ -217,7 +218,7 @@ export const Home = () => {
 
         <div className="flex h-[200px]">
           <a
-            className="bg-white bg-opacity-5 flex items-center m-auto rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 transition duration-300 ease-out"
+            className="bg-white bg-opacity-5 flex items-center m-auto rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
             href="/HectorOlivaresCV.pdf"
             target="_blank"
           >

@@ -3,17 +3,19 @@
         "title": "Personal Website V1",
         "description": "The very first version of my personal website",
         "type": "Website",
-        "link": "https://github.com/hectorolivares/V1",
+        "site": "https://www.hectorolivares.me/",
+        "code": "https://github.com/hectorolivares/V1",
         "image": "ho-cover.png",
         "start": 1,
         "end": 6
     },
     {
-        "title": "Bookshelf App",
-        "description": "Centralized hub for tracking, purchasing, and organizing readings.",
-        "type": "Design",
-        "link": "https://dribbble.com/shots/21531688-Bookshelf-App-Design?utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bookshelf%20App%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bookshelf%20App%20Design&utm_medium=Social_Share",
-        "image": "bs-cover.png",
+        "title": "Tip calculator app",
+        "description": "Split that bill with this web app",
+        "type": "Web App",
+        "site": "https://tipcalculatorkdm.netlify.app/",
+        "code": "https://github.com/hectorolivares/tip-calculator-app",
+        "image": "tc-cover.png",
         "start": 6,
         "end": 9
     },
@@ -21,17 +23,17 @@
         "title": "Bazar Yokai",
         "description": "eCommerce project promoting reuse, affordable products, and environmental care.",
         "type": "Design",
-        "link": "https://dribbble.com/shots/21535167-Bazar-Yokai-Project?utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bazar%20Yokai%20Project&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bazar%20Yokai%20Project&utm_medium=Social_Share",
+        "site": "https://dribbble.com/shots/21535167-Bazar-Yokai-Project?utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bazar%20Yokai%20Project&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bazar%20Yokai%20Project&utm_medium=Social_Share",
         "image": "by-cover.png",
         "start": 2,
         "end": 8
     },
     {
-        "title": "Tip calculator app",
-        "description": "Split that bill with this web app",
-        "type": "Web App",
-        "link": "https://github.com/hectorolivares/tip-calculator-app",
-        "image": "tc-cover.png",
+        "title": "Bookshelf App",
+        "description": "Centralized hub for tracking, purchasing, and organizing readings.",
+        "type": "Design",
+        "site": "https://dribbble.com/shots/21531688-Bookshelf-App-Design?utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bookshelf%20App%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bookshelf%20App%20Design&utm_medium=Social_Share",
+        "image": "bs-cover.png",
         "start": 1,
         "end": 4
     },
@@ -39,7 +41,8 @@
         "title": "Time Tracking Dashboard",
         "description": "Track your time with this web app",
         "type": "Web App",
-        "link": "https://github.com/hectorolivares/time-tracking-dashboard",
+        "site": "https://timetrackingkdm.netlify.app/",
+        "code": "https://github.com/hectorolivares/time-tracking-dashboard",
         "image": "tt-cover.png",
         "start": 4,
         "end": 9
@@ -48,9 +51,20 @@
         "title": "Bookmark Landing Page",
         "description": "A clean and simple interface to organize your favourite websites.",
         "type": "Website",
-        "link": "https://github.com/hectorolivares/bookmark-landing-page",
+        "site": "https://bookmarkdm.vercel.app/",
+        "code": "https://github.com/hectorolivares/bookmark-landing-page",
         "image": "bm-cover.png",
-        "start": 2,
-        "end": 8
+        "start": 1,
+        "end": 5
+    },
+    {
+        "title": "Manage Landing Page",
+        "description": "Manage makes it simple for software teams to plan day-to-day tasks.",
+        "type": "Website",
+        "site": "https://managekdm.vercel.app/",
+        "code": "https://github.com/hectorolivares/manage-landing-page",
+        "image": "man-cover.png",
+        "start": 5,
+        "end": 9
     }
 ]
