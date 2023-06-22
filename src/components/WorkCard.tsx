@@ -26,7 +26,7 @@ export const WorkCard = ({
   return (
     <div
       style={{ gridColumnStart: `${start}`, gridColumnEnd: `${end}` }}
-      className="cursor-pointer rounded-2xl p-5 mb-20 laptop:h-fit desktop:h-fit z-40 hover:-translate-y-4 hover:bg-gray-800 hover:bg-opacity-40 transition duration-300 ease-out"
+      className="cursor-pointer rounded-2xl p-5 mb-20 laptop:h-fit desktop:h-fit z-40 hover:-translate-y-2 hover:bg-gray-800 hover:bg-opacity-40 transition duration-300 ease-out"
     >
       <div
         className="laptop:h-[450px] desktop:h-[600px] aspect-square laptop:aspect-auto"
