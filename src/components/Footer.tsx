@@ -5,7 +5,7 @@ export const Footer = () => {
         <span className="opacity-50">Design and built by</span> Héctor Olivares
       </p>
 
-      <p className="my-5"><span className="opacity-50">code is licensed under</span>  <a className="opacity-100" href="">MIT</a></p>
+      <p className="my-5"><span className="opacity-50">code is licensed under</span>  <a className="opacity-100" href="https://github.com/hectorolivares/V1/blob/main/LICENSE">MIT</a></p>
 
       <p className="opacity-50">© 2023</p>
     </footer>

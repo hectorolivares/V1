@@ -74,11 +74,11 @@ export const Home = () => {
           </h2>
 
           <div className="flex flex-col w-full laptop:flex-row desktop:mb-7 laptop:mb-5 space-y-5 laptop:space-y-0 space-x-0 laptop:space-x-10 text-sm laptop:text-base">
-            <button className="w-full laptop:w-fit bg-my-lila rounded-full px-5 py-4 laptop:py-3 hover:scale-105 transition duration-200 ease-out">
-              <a className="" href="https://tally.so/r/3xjgRy">
+            <a className="" href="https://tally.so/r/3xjgRy">
+              <button className="w-full laptop:w-fit bg-my-lila rounded-full px-5 py-4 laptop:py-3 hover:scale-105 transition duration-200 ease-out">
                 Let's work together
-              </a>
-            </button>
+              </button>
+            </a>
             <button
               className="bg-white w-full laptop:w-fit bg-opacity-5 rounded-full px-5 py-4 laptop:py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
               onClick={() => {
@@ -90,24 +90,24 @@ export const Home = () => {
                 ? "Email"
                 : "Copy Email"}
             </button>
-            <button className="bg-white w-full laptop:w-fit bg-opacity-5 rounded-full px-5 py-4 laptop:py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
-              <a
-                className=""
-                href="https://github.com/hectorolivares"
-                target="_blank"
-              >
+            <a
+              className=""
+              href="https://github.com/hectorolivares"
+              target="_blank"
+            >
+              <button className="bg-white w-full laptop:w-fit bg-opacity-5 rounded-full px-5 py-4 laptop:py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
                 Github
-              </a>
-            </button>
-            <button className="bg-white w-full laptop:w-fit bg-opacity-5 rounded-full px-5 py-4 laptop:py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
-              <a
-                className=""
-                href="https://www.linkedin.com/in/hectorolivaresn/"
-                target="_blank"
-              >
+              </button>
+            </a>
+            <a
+              className=""
+              href="https://www.linkedin.com/in/hectorolivaresn/"
+              target="_blank"
+            >
+              <button className="bg-white w-full laptop:w-fit bg-opacity-5 rounded-full px-5 py-4 laptop:py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
                 LinkedIn
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </section>
 
@@ -215,16 +215,12 @@ export const Home = () => {
           </div>
 
           <div className="flex flex-col items-center justify-center space-y-10">
-            <button className="bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
-              <a
-                href="/HectorOlivaresCV.pdf"
-                className="flex items-center justify-center"
-                target="_blank"
-              >
+            <a href="/HectorOlivaresCV.pdf" className="" target="_blank">
+              <button className="flex items-center justify-center bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
                 <p className="mr-2">Download CV</p>
                 <IonIcon name="download" />
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </section>
 
@@ -250,11 +246,11 @@ export const Home = () => {
 
               <p className="my-4 laptop:my-0">Or</p>
 
-              <button className="bg-my-lila rounded-full px-5 py-3 hover:scale-105 transition duration-200 ease-out">
-                <a className="" href="https://tally.so/r/3xjgRy">
+              <a className="" href="https://tally.so/r/3xjgRy">
+                <button className="bg-my-lila rounded-full px-5 py-3 hover:scale-105 transition duration-200 ease-out">
                   Let's work together
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
           </div>
         </section>
