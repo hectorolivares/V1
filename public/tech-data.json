@@ -1,0 +1,72 @@
+[
+    {
+        "name": "TypeScript",
+        "type": "Language",
+        "image": "typescript"
+    },
+    {
+        "name": "JavaScript",
+        "type": "Language",
+        "image": "javascript"
+    },
+    {
+        "name": "Sass",
+        "type": "Language",
+        "image": "sass"
+    },
+    {
+        "name": "Python",
+        "type": "Language",
+        "image": "python"
+    },
+    {
+        "name": "React.js",
+        "type": "Framework",
+        "image": "react"
+    },
+    {
+        "name": "Vue.js",
+        "type": "Framework",
+        "image": "vue"
+    },
+    {
+        "name": "Tailwind CSS",
+        "type": "Framework",
+        "image": "tailwind"
+    },
+    {
+        "name": "Node.js",
+        "type": "Tool",
+        "image": "node"
+    },
+    {
+        "name": "Git",
+        "type": "Tool",
+        "image": "git"
+    },
+    {
+        "name": "Netlify",
+        "type": "Tool",
+        "image": "netlify"
+    },
+    {
+        "name": "NPM",
+        "type": "Tool",
+        "image": "npm"
+    },
+    {
+        "name": "Figma",
+        "type": "UI/UX",
+        "image": "figma"
+    },
+    {
+        "name": "Photoshop",
+        "type": "UI/UX",
+        "image": "photoshop"
+    },
+    {
+        "name": "Illustrator",
+        "type": "UI/UX",
+        "image": "illustrator"
+    }
+]

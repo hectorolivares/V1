@@ -7,7 +7,7 @@
         "code": "https://github.com/hectorolivares/V1",
         "image": "ho-cover.png",
         "start": 1,
-        "end": 6
+        "end": 2
     },
     {
         "title": "Tip calculator app",
@@ -16,8 +16,8 @@
         "site": "https://tipcalculatorkdm.netlify.app/",
         "code": "https://github.com/hectorolivares/tip-calculator-app",
         "image": "tc-cover.png",
-        "start": 6,
-        "end": 9
+        "start": 2,
+        "end": 3
     },
     {
         "title": "Bazar Yokai",
@@ -25,8 +25,8 @@
         "type": "Design",
         "site": "https://dribbble.com/shots/21535167-Bazar-Yokai-Project?utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bazar%20Yokai%20Project&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bazar%20Yokai%20Project&utm_medium=Social_Share",
         "image": "by-cover.png",
-        "start": 2,
-        "end": 8
+        "start": 1,
+        "end": 2
     },
     {
         "title": "Bookshelf App",
@@ -34,8 +34,8 @@
         "type": "Design",
         "site": "https://dribbble.com/shots/21531688-Bookshelf-App-Design?utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bookshelf%20App%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=hektorolivares&utm_content=Bookshelf%20App%20Design&utm_medium=Social_Share",
         "image": "bs-cover.png",
-        "start": 1,
-        "end": 4
+        "start": 2,
+        "end": 3
     },
     {
         "title": "Time Tracking Dashboard",
@@ -44,8 +44,8 @@
         "site": "https://timetrackingkdm.netlify.app/",
         "code": "https://github.com/hectorolivares/time-tracking-dashboard",
         "image": "tt-cover.png",
-        "start": 4,
-        "end": 9
+        "start": 1,
+        "end": 2
     },
     {
         "title": "Bookmark Landing Page",
@@ -54,8 +54,8 @@
         "site": "https://bookmarkdm.vercel.app/",
         "code": "https://github.com/hectorolivares/bookmark-landing-page",
         "image": "bm-cover.png",
-        "start": 1,
-        "end": 5
+        "start": 2,
+        "end": 3
     },
     {
         "title": "Manage Landing Page",
@@ -64,7 +64,7 @@
         "site": "https://managekdm.vercel.app/",
         "code": "https://github.com/hectorolivares/manage-landing-page",
         "image": "man-cover.png",
-        "start": 5,
-        "end": 9
+        "start": 1,
+        "end": 2
     }
 ]

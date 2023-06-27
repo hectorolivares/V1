@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer";
 import { useEffect, useState } from "react";
 import { HeaderMobile } from "./components/HeaderMobile";
 import { WorkCard } from "./components/WorkCard";
+import { TechCard } from "./components/TechCard";
 
 export const Home = () => {
   //* show and copy to clipboard
@@ -31,11 +32,15 @@ export const Home = () => {
 
   //* get json data
   const [data, setData] = useState<any[]>([]);
+  const [techData, setTechData] = useState<any[]>([]);
 
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setData(data));
+    fetch("tech-data.json")
+      .then((res) => res.json())
+      .then((techData) => setTechData(techData));
   }, []);
 
   return (
@@ -55,12 +60,12 @@ export const Home = () => {
         <IonIcon name="checkmark-circle" className="text-green-300 ml-2" />
       </div>
 
-      <main className="text-white m-auto w-full px-4 laptop:max-w-[1148px] desktop:max-w-[1548px]">
+      <main className="text-white m-auto w-full px-4 laptop:max-w-[932px] desktop:max-w-[1312px]">
         <section
           id="home"
-          className="w-full fade-in-section flex items-start justify-end mb-40 h-[400px] flex-col laptop:items-end laptop:h-[620px] desktop:h-[880px] laptop:flex-row laptop:justify-between"
+          className="w-full fade-in-section flex items-start justify-end mb-24 h-[600px] flex-col space-y-10 laptop:space-y-24 laptop:h-[620px] desktop:h-[880px]"
         >
-          <h2 className="text-3xl mobile:text-[36px] tablet:text-[62px] desktop:text-[86px] leading-tight font-medium align-baseline">
+          <h2 className="text-3xl mobile:text-[36px] tablet:text-[62px] laptop:text-[68px] desktop:text-[94px] leading-tight font-medium align-baseline">
             <span className="opacity-20 -z-10   ">Hi, my name is</span>
             <br />
             Héctor Olivares
@@ -68,44 +73,47 @@ export const Home = () => {
             <span className="opacity-20">I’m a</span> Web Developer.
           </h2>
 
-          <ul className="flex align-baseline flex-wrap gap-y-9 mt-10 desktop:mb-7 laptop:mb-5 text-sm">
-            <li className="">
-              <a
-                className="mr-3 cursor-pointer desktop:mr-12 bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
-                onClick={() => {
-                  enableLink();
-                  setClipboardMessage(true);
-                }}
-              >
-                {/Mobi|Android/i.test(navigator.userAgent)
-                  ? "Email"
-                  : "Copy Email"}
+          <div className="flex flex-col w-full laptop:flex-row desktop:mb-7 laptop:mb-5 space-y-5 laptop:space-y-0 space-x-0 laptop:space-x-10 text-sm laptop:text-base">
+            <button className="w-full laptop:w-fit bg-my-lila rounded-full px-5 py-4 laptop:py-3 hover:scale-105 transition duration-200 ease-out">
+              <a className="" href="https://tally.so/r/3xjgRy">
+                Let's work together
               </a>
-            </li>
-            <li className="">
+            </button>
+            <button
+              className="bg-white w-full laptop:w-fit bg-opacity-5 rounded-full px-5 py-4 laptop:py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
+              onClick={() => {
+                enableLink();
+                setClipboardMessage(true);
+              }}
+            >
+              {/Mobi|Android/i.test(navigator.userAgent)
+                ? "Email"
+                : "Copy Email"}
+            </button>
+            <button className="bg-white w-full laptop:w-fit bg-opacity-5 rounded-full px-5 py-4 laptop:py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
               <a
-                className="mr-3 desktop:mr-12 bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-300 ease-out"
+                className=""
                 href="https://github.com/hectorolivares"
                 target="_blank"
               >
                 Github
               </a>
-            </li>
-            <li className="">
+            </button>
+            <button className="bg-white w-full laptop:w-fit bg-opacity-5 rounded-full px-5 py-4 laptop:py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
               <a
-                className="bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
+                className=""
                 href="https://www.linkedin.com/in/hectorolivaresn/"
                 target="_blank"
               >
                 LinkedIn
               </a>
-            </li>
-          </ul>
+            </button>
+          </div>
         </section>
 
         <section
           id="work"
-          className="fade-in-section mb-40 laptop:grid laptop:grid-cols-8 laptop:grid-rows-3 laptop:gap-x-24 laptop:gap-y-36 desktop:gap-x-28 desktop:gap-y-36"
+          className="fade-in-section mb-40 laptop:grid laptop:grid-cols-2 laptop:gap-14 desktop:gap-20"
         >
           {data.map((item, index) => (
             <WorkCard
@@ -122,14 +130,14 @@ export const Home = () => {
           ))}
         </section>
 
-        <section
-          id="about"
-          className="fade-in-section laptop:grid laptop:grid-cols-5 laptop:grid-rows-1 gap-10"
-        >
-          <div className="bg-gray-500 bg-opacity-5 rounded-xl col-span-3 p-7 font-extralight mb-6 desktop:mb-0 desktop:p-14 ">
-            <div className=" font-light desktop:mb-14">
-              <h3 className="text-3xl mb-14 font-normal">About me</h3>
-              <p className="mb-14 desktop:text-[17px] desktop:mb-0">
+        <section id="about" className="space-y-10 mb-20">
+          <h2 className="text-xl text-center font-mono uppercase tracking-widest">
+            About me
+          </h2>
+
+          <div className=" mb-6 desktop:mb-0 laptop:space-y-32  ">
+            <div className="flex items-center justify-center desktop:mb-14">
+              <p className="mb-14 text-lg laptop:text-xl font-normal leading-[2rem] laptop:leading-[2.5rem] desktop:mb-0 laptop:w-[75%]">
                 Hi, I am Héctor Olivares, a web developer with experience in
                 TypeScript, React, and Tailwind CSS. Also, I am proficient in
                 designing for web pages or applications. Currently, I am
@@ -141,116 +149,114 @@ export const Home = () => {
               </p>
             </div>
 
-            <div className="tablet:columns-2 desktop:columns-2 laptop:text-sm desktop:text-base">
-              <div className="">
-                <div className="mb-8">
-                  <h5 className="text-[18px] font-semibold mb-3">Education</h5>
-                  <p className="font-medium mb-2">
+            <div className="flex laptop:justify-end">
+              <div className="laptop:flex laptop:justify-between space-y-12 laptop:space-y-0 text-center laptop:text-sm desktop:text-base">
+                <div className="mb-8 space-y-3 flex-1">
+                  <div className="flex items-center justify-center space-x-3">
+                    <IonIcon className="text-lg" name="school" />
+                    <h5 className="text-lg font-medium">Education</h5>
+                  </div>
+                  <p className="laptop:ml-8 ">
                     Universidad Nacional Autónoma de México (National Autonomous
                     University of Mexico)
                   </p>
-                  <p className="opacity-60 mb-2">
+                  <p className="font-light opacity-60 laptop:ml-8">
                     B.E. in Computer Engineering, with specialization in
                     Software Engineering
                   </p>
-                  <p className="opacity-60">August 2020 - Present</p>
+                  <p className="font-light opacity-60 laptop:ml-8">
+                    August 2020 - Present
+                  </p>
                 </div>
-                <div className="mb-8 desktop:mb-0">
-                  <h5 className="text-[18px] font-semibold mb-3">Languages</h5>
-                  <p className="opacity-60 mb-2 leading-8">
+
+                <div className="space-y-3 flex-1">
+                  <div className="flex items-center justify-center space-x-3">
+                    <IonIcon className="text-lg" name="language" />
+                    <h5 className="text-lg font-medium">Languages</h5>
+                  </div>
+                  <p className="opacity-60 leading-7 font-light laptop:ml-8">
                     English (Intermediate)
                     <br />
                     Spanish (Native)
                   </p>
                 </div>
-              </div>
 
-              <div className="">
-                <div className="mb-7">
-                  <h5 className="text-[18px] font-semibold mb-3">Experience</h5>
-                  <p className="font-medium mb-2">Freelance Web Developer</p>
-                  <p className="opacity-60 mb-2">
+                <div className="space-y-3 flex-1">
+                  <div className="flex items-center justify-center space-x-3">
+                    <IonIcon className="text-lg" name="flask" />
+                    <h5 className="text-lg font-medium">Experience</h5>
+                  </div>
+                  <p className="">Freelance Web Developer</p>
+                  <p className="font-light opacity-60">
                     Design and development of websites that help to advertise
                     projects and/or businesses of the people who work with me.
                   </p>
-                  <p className="opacity-60">July 2022 - Present</p>
-                </div>
-                <div>
-                  <h5 className="text-[18px] font-semibold mb-3">Interests</h5>
-                  <p className="opacity-60 mb-2">
-                    App development, game development, digital content creation,
-                    running, football, sports, reading, movies, philosophy and
-                    architecture.
-                  </p>
+                  <p className="font-light opacity-60">July 2022 - Present</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="bg-gray-500 bg-opacity-5 rounded-xl laptop:col-span-2 h-fit desktop:h-auto p-7 desktop:p-14 font-mono text-sm">
-            <h3 className="text-3xl mb-14 font-sans font-normal">Skills</h3>
-            <div className="uppercase mb-10">
-              <h5 className="font-bold mb-5 ita">Programming languages</h5>
-              <p className="font-thin leading-8">
-                TypeScript, JavaScript(ES6), HTML, CSS/Scss/Sass, Python
-              </p>
-            </div>
-            <div className="uppercase mb-10">
-              <h5 className="font-bold mb-5 ita">
-                Frameworks/Libraries/Others
-              </h5>
-              <p className="font-thin leading-8">
-                React.js, Vue.js, Tailwind CSS, Bootstrap, Node.js, WordPress, Webpack,
-                Netlify, Vercel, NPM, Git, Command line
-              </p>
-            </div>
-            <div className="uppercase mb-10">
-              <h5 className="font-bold mb-5 ita">UX/UI Design</h5>
-              <p className="font-thin leading-8">
-                Responsive Design, Prototyping, Figma, Photoshop, Illustrator
-              </p>
-            </div>
-            <div className="uppercase">
-              <h5 className="font-bold mb-5 ita">Currently Learning</h5>
-              <p className="font-thin leading-8">Next.js, SQL, Java</p>
             </div>
           </div>
         </section>
 
-        <div className="flex h-[200px]">
-          <a
-            className="bg-white bg-opacity-5 flex items-center m-auto rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
-            href="/HectorOlivaresCV.pdf"
-            target="_blank"
-          >
-            <p className="mr-2">Download CV</p>
-            <IonIcon name="download" />
-          </a>
-        </div>
+        <section className="space-y-16 mb-36">
+          <h2 className="text-xl text-center font-mono uppercase tracking-widest">
+            My tech stack
+          </h2>
+
+          <div className="grid grid-cols-2 gap-7 laptop:grid-cols-4 laptop:gap-10">
+            {techData.map((item, index) => (
+              <TechCard
+                key={index}
+                name={item.name}
+                type={item.type}
+                image={item.image}
+              />
+            ))}
+          </div>
+
+          <div className="flex flex-col items-center justify-center space-y-10">
+            <button className="bg-white bg-opacity-5 rounded-full px-5 py-3 hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out">
+              <a
+                href="/HectorOlivaresCV.pdf"
+                className="flex items-center justify-center"
+                target="_blank"
+              >
+                <p className="mr-2">Download CV</p>
+                <IonIcon name="download" />
+              </a>
+            </button>
+          </div>
+        </section>
 
         <section
           id="contact"
-          className="py-40 w-[80%] m-auto laptop:py-24 desktop:py-40"
+          className="bg-gray-800 bg-opacity-40 border border-gray-700 py-20 rounded-2xl m-auto laptop:py-24 desktop:py-20 px-10"
         >
-          <h2 className="text-3xl laptop:text-4xl leading-relaxed text-center">
-            Get in touch by{" "}
-            <a
-              onClick={() => {
-                enableLink();
-                setClipboardMessage(true);
-              }}
-              className="text-my-lila hover:underline cursor-pointer"
-            >
-              email
-            </a>{" "}
-            or{" "}
-            <a
-              className="text-my-lila hover:underline"
-              href="https://www.linkedin.com/in/hectorolivaresn/"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </h2>
+          <div className="flex flex-col justify-center items-center space-y-10 laptop:flex-row laptop:justify-between laptop:space-y-0">
+            <h2 className="text-3xl">Get in touch</h2>
+
+            <div className="flex flex-col-reverse items-center laptop:flex-row laptop:space-x-5">
+              <button
+                className="bg-white bg-opacity-5 rounded-full px-5 py-3 w-full laptop:w-fit hover:bg-my-lila hover:bg-opacity-100 hover:scale-105 transition duration-200 ease-out"
+                onClick={() => {
+                  enableLink();
+                  setClipboardMessage(true);
+                }}
+              >
+                {/Mobi|Android/i.test(navigator.userAgent)
+                  ? "Email me"
+                  : "Copy Email"}
+              </button>
+
+              <p className="my-4 laptop:my-0">Or</p>
+
+              <button className="bg-my-lila rounded-full px-5 py-3 hover:scale-105 transition duration-200 ease-out">
+                <a className="" href="https://tally.so/r/3xjgRy">
+                  Let's work together
+                </a>
+              </button>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />
