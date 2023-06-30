@@ -64,7 +64,7 @@ export const HeaderMobile = () => {
           </Link>
         </li>
         <li className="mb-16 hover:text-my-lila">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={700}>
+          <Link onClick={handleClick} to="contact" smooth={true} duration={700} offset={-150}>
             Contact
           </Link>
         </li>
