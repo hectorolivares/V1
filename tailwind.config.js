@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/components/**/*.{html,js}",
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
@@ -13,6 +12,8 @@ export default {
     extend: {
       colors: {
         'my-lila': '#641BFF',
+        'my-lila-light': '#e9deff',
+        'white': '#e9deff',
         'my-bg': '#0D0C12',
       },
       keyframes: {

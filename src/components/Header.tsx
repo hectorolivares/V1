@@ -10,8 +10,8 @@ export const Header = () => {
         </h1>
 
         <nav>
-          <div className="flex justify-center text-center laptop:space-x-12 desktop:space-x-20">
-              <Link className='cursor-pointer hover:bg-my-lila py-2 px-5 rounded-full transition duration-200 ease-in-out' to="work" smooth={true} duration={700} offset={-160}>Work</Link>
+          <div className="group flex justify-center text-center laptop:space-x-12 desktop:space-x-20 group-hover:opacity-50">
+              <Link className='cursor-pointer hover:opacity-100 hover:bg-my-lila py-2 px-5 rounded-full transition duration-200 ease-in-out' to="work" smooth={true} duration={700} offset={-160}>Work</Link>
               <Link className='cursor-pointer hover:bg-my-lila py-2 px-5 rounded-full transition duration-200 ease-in-out' to="about" smooth={true} duration={700} offset={-100}>About</Link>
               <Link className='cursor-pointer hover:bg-my-lila py-2 px-5 rounded-full transition duration-200 ease-in-out' to="contact" smooth={true} duration={700}>Contact</Link>
               <a className='cursor-pointer hover:bg-my-lila py-2 px-5 rounded-full transition duration-200 ease-in-out' href="/HectorOlivaresCV.pdf" target="_blank">

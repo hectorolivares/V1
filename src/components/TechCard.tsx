@@ -21,9 +21,9 @@ export const TechCard = ({
 
   return (
     <div
-      className="group bg-gray-800 bg-opacity-40 border border-gray-700 hover:border-my-lila border-opacity-40 w-full cursor-pointer rounded-2xl flex flex-col items-center justify-center p-4 space-y-5 transition duration-200 ease-in-out"
+      className="group bg-gray-800 bg-opacity-30 border border-gray-700 hover:border-my-lila border-opacity-30 w-full cursor-pointer rounded-2xl flex flex-col items-center justify-center p-4 space-y-5 transition duration-200 ease-in-out"
     >
-      <div className="bg-gray-800 bg-opacity-60 p-4 rounded-lg border border-gray-700 border-opacity-40 group-hover:scale-110 transition duration-200 ease-in-out">
+      <div className="bg-gray-800 bg-opacity-40 p-4 rounded-lg border border-gray-700 border-opacity-40 group-hover:scale-110 transition duration-200 ease-in-out">
         <img className="w-[38px]" src={`/${image}-icon.svg`} alt="" />
       </div>
 
