@@ -68,7 +68,7 @@ export const Home = () => {
         >
           <Fade cascade direction="up" damping={1}>
             <div className="space-y-8">
-              <h2 className="text-3xl desktop:text-7xl  leading-tight font-medium align-baseline">
+              <h2 className="text-3xl laptop:text-6xl desktop:text-7xl  leading-tight font-medium align-baseline">
                 I'm Héctor Olivares.
                 <br />I design and built websites.
               </h2>
